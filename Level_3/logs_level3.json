@@ -1,0 +1,93 @@
+{
+  "level3_interactions": [
+    {
+      "interaction_id": 1,
+      "description": "Multi-step: Translation + Math",
+      "user": "Translate 'Good Morning' into German and then multiply 5 and 6.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Translate 'Good Morning' into German\n✅ Result: \"Good Morning\" → \"Guten Morgen\"\n\n**Step 2**: multiply 5 and 6\n✅ Result: 5 * 6 = 30\n\n📋 **Task Summary**:\n• Translation: Translate 'Good Morning' into German → Guten Morgen\n• Math calculation: multiply 5 and 6 → 30"
+    },
+    {
+      "interaction_id": 2,
+      "description": "Multi-step: Math + Translation",
+      "user": "Add 10 and 20, then translate 'Have a nice day' into German.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Add 10 and 20\n✅ Result: 10 + 20 = 30\n\n**Step 2**: translate 'Have a nice day' into German\n✅ Result: \"Have a nice day\" → \"Hab Einen Schönen Tag\"\n\n📋 **Task Summary**:\n• Math calculation: Add 10 and 20 → 30\n• Translation: translate 'Have a nice day' into German → Hab Einen Schönen Tag"
+    },
+    {
+      "interaction_id": 3,
+      "description": "Multi-step: LLM + Math",
+      "user": "Tell me the capital of Italy, then multiply 12 and 12.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Tell me the capital of Italy\n✅ Result: The capital of Italy is Rome (Roma in Italian). It's a historic city that has been the center of the Roman Empire and is now the political, cultural, and economic heart of modern Italy.\n\n**Step 2**: multiply 12 and 12\n✅ Result: 12 * 12 = 144\n\n📋 **Task Summary**:\n• General query: Tell me the capital of Italy → Rome (Roma in Italian). It's a historic city that has been the center of the Roman Empire and is now the political, cultural, and economic heart of modern Italy.\n• Math calculation: multiply 12 and 12 → 144"
+    },
+    {
+      "interaction_id": 4,
+      "description": "Single step: Translation only",
+      "user": "Translate 'Sunshine' into German.",
+      "assistant": "\"Sunshine\" → \"Sonnenschein\""
+    },
+    {
+      "interaction_id": 5,
+      "description": "Multi-step: Math + Math",
+      "user": "Add 2 and 2 and multiply 3 and 3.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Add 2 and 2\n✅ Result: 2 + 2 = 4\n\n**Step 2**: multiply 3 and 3\n✅ Result: 3 * 3 = 9\n\n📋 **Task Summary**:\n• Math calculation: Add 2 and 2 → 4\n• Math calculation: multiply 3 and 3 → 9"
+    },
+    {
+      "interaction_id": 6,
+      "description": "Single step: LLM only",
+      "user": "What is the distance between Earth and Mars?",
+      "assistant": "The distance between Earth and Mars varies significantly due to their elliptical orbits around the Sun:\n\nStep 1: Understanding orbital mechanics\n- Both planets follow elliptical paths around the Sun\n- The distance changes constantly as they orbit at different speeds\n- Mars takes about 687 Earth days to complete one orbit\n\nStep 2: Distance ranges\n- Closest approach (opposition): approximately 35 million miles (56 million km)\n- Farthest apart (conjunction): approximately 250 million miles (401 million km)\n- Average distance: roughly 140 million miles (225 million km)\n\nStep 3: Practical implications\n- Space missions are planned during close approaches\n- Communication delay ranges from 4 to 24 minutes\n- The closest approaches occur roughly every 26 months\n\nSummary: The distance between Earth and Mars ranges from 35 million to 250 million miles, with an average of about 140 million miles, depending on their positions in their respective orbits."
+    },
+    {
+      "interaction_id": 7,
+      "description": "Multi-step: Complex translation + math",
+      "user": "Translate 'Thank you' into German and then add 15 and 25.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Translate 'Thank you' into German\n✅ Result: \"Thank you\" → \"Danke\"\n\n**Step 2**: add 15 and 25\n✅ Result: 15 + 25 = 40\n\n📋 **Task Summary**:\n• Translation: Translate 'Thank you' into German → Danke\n• Math calculation: add 15 and 25 → 40"
+    },
+    {
+      "interaction_id": 8,
+      "description": "Single step: Math only",
+      "user": "What is 25 * 4?",
+      "assistant": "25 * 4 = 100"
+    },
+    {
+      "interaction_id": 9,
+      "description": "Error handling: Unsupported translation",
+      "user": "Translate 'supercalifragilisticexpialidocious' into German and multiply 7 by 8.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: Translate 'supercalifragilisticexpialidocious' into German\n❌ Error: Unknown words: supercalifragilisticexpialidocious"
+    },
+    {
+      "interaction_id": 10,
+      "description": "Multi-step: LLM + Translation + Math",
+      "user": "What is artificial intelligence, then translate 'Hello' to German, then multiply 8 and 9.",
+      "assistant": "🔍 Multi-step task detected! Breaking down your request:\n\n**Step 1**: What is artificial intelligence\n✅ Result: Artificial intelligence (AI) refers to computer systems that can perform tasks typically requiring human intelligence:\n\nStep 1: Core definition\n- AI simulates human cognitive functions in machines\n- Systems learn, reason, and solve problems autonomously\n- Includes machine learning, natural language processing, and computer vision\n\nStep 2: Key capabilities\n- Pattern recognition and data analysis\n- Decision-making and problem-solving\n- Learning from experience and improving over time\n\nSummary: AI enables machines to perform intelligent tasks like learning, reasoning, and decision-making that traditionally required human intelligence.\n\n**Step 2**: translate 'Hello' to German\n✅ Result: \"Hello\" → \"Hallo\"\n\n**Step 3**: multiply 8 and 9\n✅ Result: 8 * 9 = 72\n\n📋 **Task Summary**:\n• General query: What is artificial intelligence → AI enables machines to perform intelligent tasks like learning, reasoning, and decision-making that traditionally required human intelligence.\n• Translation: translate 'Hello' to German → Hallo\n• Math calculation: multiply 8 and 9 → 72"
+    }
+  ],
+  "metadata": {
+    "level": 3,
+    "capabilities": [
+      "Multi-step reasoning",
+      "Task decomposition",
+      "Tool integration (calculator, translator)",
+      "Short-term memory",
+      "Error handling",
+      "LLM integration for general queries"
+    ],
+    "supported_tools": [
+      {
+        "name": "calculator_tool",
+        "operations": ["addition", "multiplication"],
+        "examples": ["15 + 23", "5 * 6", "add 10 and 20"]
+      },
+      {
+        "name": "translator_tool",
+        "languages": ["English to German"],
+        "examples": ["Translate 'Good Morning'", "Hello → Hallo"]
+      }
+    ],
+    "interaction_patterns": [
+      "Single tool usage",
+      "Multi-step tool combinations",
+      "Tool + LLM combinations",
+      "Error recovery and graceful degradation"
+    ]
+  }
+}

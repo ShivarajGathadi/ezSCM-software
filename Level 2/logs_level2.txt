@@ -1,0 +1,181 @@
+Level 2 Chatbot - Example Interaction Logs
+==========================================
+
+This file contains example interactions demonstrating the Level 2 chatbot's enhanced capabilities
+including tool integration and multiple task detection.
+
+========================================
+INTERACTION 1: Basic Addition (Tool Used)
+========================================
+
+You: What is 15 + 23?
+
+🤖 Chatbot: 🧮 Calculator Result: 15 + 23 = 38
+
+========================================
+INTERACTION 2: Multiplication (Tool Used)
+========================================
+
+You: Multiply 9 by 8
+
+🤖 Chatbot: 🧮 Calculator Result: 9 * 8 = 72
+
+========================================
+INTERACTION 3: General Question (LLM Used)
+========================================
+
+You: How do I improve my public speaking skills?
+
+🤖 Chatbot: Here's a step-by-step guide to improving your public speaking skills:
+
+Step 1: Start with preparation and practice
+- Know your material inside and out
+- Practice your speech multiple times in front of a mirror
+- Record yourself to identify areas for improvement
+- Time your presentation to ensure proper pacing
+
+Step 2: Work on your physical presence
+- Practice good posture - stand tall and confident
+- Use purposeful hand gestures to emphasize points
+- Make eye contact with different sections of your audience
+- Move with intention, not nervous energy
+
+Step 3: Focus on vocal techniques
+- Practice speaking clearly and at an appropriate volume
+- Vary your tone and pace to keep audience engaged
+- Use pauses effectively for emphasis and to gather thoughts
+- Work on eliminating filler words like "um" and "uh"
+
+Step 4: Build confidence gradually
+- Start with smaller, familiar audiences
+- Join groups like Toastmasters for regular practice
+- Record and review your performances
+- Seek constructive feedback from trusted sources
+
+Step 5: Manage anxiety and nerves
+- Use deep breathing techniques before speaking
+- Visualize successful presentations
+- Focus on your message rather than yourself
+- Remember that some nervousness is normal and can improve performance
+
+Summary: Improving public speaking requires consistent practice, preparation, and gradual exposure to speaking opportunities. Focus on your message, practice regularly, and build confidence through experience.
+
+========================================
+INTERACTION 4: Multiple Tasks (Graceful Failure)
+========================================
+
+You: Multiply 9 and 8, and also tell me the capital of Japan
+
+🤖 Chatbot: I cannot yet handle multiple tasks at once. Please ask me one thing at a time.
+
+For example:
+✅ Good: "What is 15 + 23?"
+✅ Good: "What is the capital of Japan?"
+❌ Too complex: "Multiply 9 and 8, and also tell me the capital of Japan"
+
+Please separate your questions and I'll be happy to help with each one individually!
+
+========================================
+INTERACTION 5: Unsupported Math Operation
+========================================
+
+You: What is 50 divided by 5?
+
+🤖 Chatbot: 🧮 Calculator Error: Could not parse mathematical expression. I only support basic addition and multiplication.
+
+Supported examples:
+• 15 + 23
+• add 10 and 5
+• 5 * 6
+• multiply 4 by 7
+• what is 12 + 8
+
+========================================
+INTERACTION 6: Complex Addition (Tool Used)
+========================================
+
+You: Add 127 and 398
+
+🤖 Chatbot: 🧮 Calculator Result: 127 + 398 = 525
+
+========================================
+INTERACTION 7: Another Multiple Tasks Example
+========================================
+
+You: Calculate 25 * 4 and also explain how photosynthesis works
+
+🤖 Chatbot: I cannot yet handle multiple tasks at once. Please ask me one thing at a time.
+
+For example:
+✅ Good: "What is 15 + 23?"
+✅ Good: "What is the capital of Japan?"
+❌ Too complex: "Multiply 9 and 8, and also tell me the capital of Japan"
+
+Please separate your questions and I'll be happy to help with each one individually!
+
+========================================
+INTERACTION 8: Decimal Numbers (Tool Used)
+========================================
+
+You: What is 2.5 + 3.7?
+
+🤖 Chatbot: 🧮 Calculator Result: 2.5 + 3.7 = 6.2
+
+========================================
+INTERACTION 9: Technical Explanation (LLM Used)
+========================================
+
+You: What is artificial intelligence?
+
+🤖 Chatbot: Here's a step-by-step explanation of artificial intelligence:
+
+Step 1: Define artificial intelligence
+- AI is the simulation of human intelligence in machines
+- These systems are programmed to think and learn like humans
+- AI can perform tasks that typically require human cognitive functions
+
+Step 2: Understanding core AI capabilities
+- Learning: Acquiring information and rules for using it
+- Reasoning: Using rules to reach approximate or definite conclusions
+- Problem-solving: Finding solutions to complex challenges
+- Perception: Interpreting sensory data
+
+Step 3: Types of AI systems
+- Narrow AI: Designed for specific tasks (like voice assistants, recommendation systems)
+- General AI: Hypothetical AI with human-like cognitive abilities across all domains
+- Superintelligent AI: Theoretical AI that exceeds human intelligence
+
+Step 4: Common AI technologies
+- Machine Learning: Systems that improve automatically through experience
+- Neural Networks: Computing systems inspired by biological neural networks
+- Natural Language Processing: Understanding and generating human language
+- Computer Vision: Interpreting and analyzing visual information
+
+Step 5: Real-world applications
+- Virtual assistants (Siri, Alexa, Google Assistant)
+- Recommendation engines (Netflix, Amazon, Spotify)
+- Autonomous vehicles and navigation systems
+- Medical diagnosis and drug discovery
+- Financial trading and fraud detection
+
+Summary: AI is a broad field focused on creating intelligent machines that can perform tasks requiring human-like thinking, learning, and decision-making capabilities across various domains and applications.
+
+========================================
+INTERACTION 10: Different Math Format (Tool Used)
+========================================
+
+You: 15 plus 27
+
+🤖 Chatbot: 🧮 Calculator Result: 15 + 27 = 42
+
+========================================
+END OF LOGS
+========================================
+
+Summary of Level 2 Capabilities:
+✅ Tool Integration: Calculator tool handles math operations
+✅ Task Detection: Automatically routes math vs general questions
+✅ Multiple Task Detection: Gracefully refuses complex multi-task requests
+✅ Error Handling: Proper error messages for unsupported operations
+✅ Structured Responses: LLM still provides step-by-step answers for general questions
+✅ Flexible Input: Supports various math expression formats
